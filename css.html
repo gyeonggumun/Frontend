@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge">
+        <title> CSS기초 - 선택자</title>
+        <!--<link href="style.css" rel = "stylesheet" type = "text/css" /> 외부스타일시트 css방법-->
+        <style>
+            *{
+                padding: 0; /*안쪽여백*/
+                margin : 0; /*바깥여백*/
+                    /*style안에서 주석을 주는 방법!
+                color: deeppink; */
+            }
+            /*
+            h1{
+                color:aqua; 글자색부여 : 단어, 컬러코드(hex)
+            }
+            p{
+                color:blue;
+            }
+            */
+            #aa{
+                color:blue;
+            }
+            #bb{
+                color: chartreuse;
+            }
+            .cc{
+                font-size: 50px;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <h1 class = "cc">전체선택자</h1>
+        <p> 
+            * / html내에 등장하는 모든 형태를 선택하는 선택자.(초기화, 기본 설정값)
+        </p>
+        
+        <br/><br/><br/>
+        
+        <h1 id = "bb">태그선택자</h1>
+        <p>h1, h2, p, a, img... / html내에 등장하는 특정한 태그를 선택하는 선택자. </p>
+        
+        <br/><br/><br/>
+        
+        <h1 id = "aa">아이디선택자</h1>
+        <p>
+            : 본문(id ="name") / 스타일(#) <br/>
+              특정한 이름을 부여하여 선택하는 선택자로, html화면 내에서 하나의 이름으로 한번만 사용가능!<br/>
+              주로 큰 단락, 부모에서 사용, 위치이동, 이름
+        </p>
+
+          <br/><br/><br/>
+        
+        <h1 class = "cc">클래스선택자</h1>
+        <p style = "color:blue">
+            :본문(class="name") / 스타일(.)<br/>
+             특정한 이름을 부여하여 선택하는 선택자로, html화면 내에서 하나의 이름으로 여러군데 여러번 사용가능! <br/>
+             주로 작은 요소, 작은 단락, 변화가 잦은 스타일
+        </p>
+        
+    </body>
+</html>
